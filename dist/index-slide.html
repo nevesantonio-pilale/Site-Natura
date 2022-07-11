@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Basic HTML Slideshow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'>
+<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/67439/basic.css'>
+<link rel='stylesheet' href='https://staticresource.s3.amazonaws.com/data-buttons.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700,900'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic'>
+<link rel='stylesheet' href='https://staticresource.s3.amazonaws.com/basic.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section data-slideshow>
+  <article data-slide data-theme=dark>
+    <h1>HTML Slideshow</h1>
+    <h2>Slideshow Built using HTML, CSS, and JS</h2>
+    <p>Use <code>left</code> and <code>right</code> arrow keys to navigate, or use the buttons below</p>
+  </article>
+  <article data-slide>
+    <h1>Default Slide</h1>
+    <h2>Subheadline</h2>
+    <p>Also try swiping on touchscreens&hellip;</p>
+  </article>
+  <article data-slide data-theme=dark>
+    <h1>Dark Slide</h1>
+    <h2>Subheadline</h2>
+  </article>
+  <article data-slide data-theme=code>
+    <h1>Code Themed Slide</h1>
+    <h2>Subheadline</h2>
+  </article>
+  <article data-slide data-theme=book>
+    <h1>Book Themed Slide</h1>
+    <h2>Subheadline</h2>
+  </article>
+  <nav>
+    <input type=button data-button=outline value=&lt; onclick=move('prev') ontouchstart=move('prev')>
+    <input type=button data-button=outline value=&gt; onclick=move('next') ontouchstart=move('next')>
+  </nav>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
